@@ -78,7 +78,7 @@ export default definePlugin((serverApi: ServerAPI) => {
   serverApi.routerHook.addGlobalComponent("WatermarkOverlay", () => (<WatermarkOverlay state={state} />));
 
   return {
-    title: <div className={staticClasses.Title}>MagicBlack</div>,
+    title: <div className={staticClasses.Title}>DeckWiz Watermark</div>,
     content: <Content serverAPI={serverApi} state={state} />,
     icon: <LogoIcon />,
     onDismount() {

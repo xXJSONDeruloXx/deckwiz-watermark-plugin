@@ -1,7 +1,7 @@
 {
     "translation": {
-        "help_message": "Press <Key1/> + <Key2/> to overlay a black background over the entire screen",
-        "toggle_enableoverlay_label": "Overlay black background",
+        "help_message": "Press <Key1/> + <Key2/> to toggle the DeckWiz watermark overlay",
+        "toggle_enableoverlay_label": "Show DeckWiz watermark",
         "toggle_enableoverlay_description": "Press <Key/> to return to the plugin",
         "warning_message": "<Key1/> Note that the keys and the touch screen will continue to work",
         "error_hotkey_message":"<Key1/> Hotkeys are broken in all plugins due to a SteamOS update. No solution yet, hotkeys remain disabled."

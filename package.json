@@ -1,7 +1,7 @@
 {
-  "name": "magicblack-decky",
-  "version": "1.0.5",
-  "description": "Overlays the screen with black color, emulating the screen being turned off on the Steam Deck OLED.",
+  "name": "deckwiz-watermark",
+  "version": "1.0.0",
+  "description": "Displays a watermark overlay on the Steam Deck screen.",
   "scripts": {
     "build": "shx rm -rf dist && rollup -c",
     "watch": "rollup -c -w",
@@ -9,25 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steam3d/MagicBlackDecky.git"
+    "url": "git+https://github.com/xXJSONDeruloXx/deckwiz-watermark-plugin.git"
   },
   "keywords": [
     "decky",
     "plugin",
-    "oled",
     "steam-deck",
     "overlay",
-    "black",
-    "shortcut",
-    "screen",
-    "off"
+    "watermark",
+    "deckwiz"
   ],
-  "author": "Aleksandr Maslov <MagicPods@outlook.com>",
+  "author": "xXJSONDeruloXx",
   "license": "GNU GENERAL PUBLIC LICENSE Version 3",
   "bugs": {
-    "url": "https://github.com/steam3d/MagicBlackDecky/issues"
+    "url": "https://github.com/xXJSONDeruloXx/deckwiz-watermark-plugin/issues"
   },
-  "homepage": "https://github.com/steam3d/MagicBlackDecky#readme",
+  "homepage": "https://github.com/xXJSONDeruloXx/deckwiz-watermark-plugin#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-json": "^4.1.0",

@@ -1,10 +1,10 @@
 {
-  "name": "MagicBlack",
-  "author": "Aleksandr Maslov",
+  "name": "DeckWiz-Watermark",
+  "author": "xXJSONDeruloXx",
   "flags": [],
   "publish": {
-    "tags": ["oled", "overlay", "black", "shortcut", "screen", "off"],
-    "description": "Overlays the screen with black color, emulating the screen being turned off on the Steam Deck OLED.",
-    "image": "https://raw.githubusercontent.com/steam3d/MagicBlackDecky/master/docs/images/preview.png"
+    "tags": ["overlay", "watermark", "deckwiz"],
+    "description": "Displays a watermark overlay on the Steam Deck screen.",
+    "image": "https://raw.githubusercontent.com/xXJSONDeruloXx/deckwiz-watermark-plugin/master/docs/images/preview.png"
   }
 }
