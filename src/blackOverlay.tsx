@@ -1,6 +1,7 @@
 import { findModuleChild } from "decky-frontend-lib";
 import { VFC, useEffect, useState } from "react";
 import { Button, Input } from "./input";
+import watermarkPng from "./watermark.png";
 
 enum UIComposition {
     Hidden = 0,
@@ -57,13 +58,16 @@ export class State {
     }
 }
 
-export const BlackBackground: VFC = () => {
+export const WatermarkBackground: VFC = () => {
     useUIComposition(UIComposition.Notification);
     return (
         <div style={{
             height: "100vh",
             width: "100vw",
-            background: "#000000",
+            backgroundImage: `url(${watermarkPng})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom-right",
+            backgroundSize: "auto",
             opacity: 1,
             zIndex: 7002,
             position: "fixed",
@@ -72,7 +76,7 @@ export const BlackBackground: VFC = () => {
     )
 }
 
-export const BlackOverlay: VFC<{ state: State }> = ({ state }) => {
+export const WatermarkOverlay: VFC<{ state: State }> = ({ state }) => {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
@@ -108,7 +112,7 @@ export const BlackOverlay: VFC<{ state: State }> = ({ state }) => {
     return (
         <>
             {visible &&
-                <BlackBackground />
+                <WatermarkBackground />
             }
         </>
     );

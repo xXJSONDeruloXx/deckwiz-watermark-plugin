@@ -11,7 +11,7 @@ import {
 import { VFC, useEffect, useState } from "react";
 import { Trans } from 'react-i18next'
 import { t } from 'i18next';
-import { BlackOverlay, State } from "./blackOverlay";
+import { WatermarkOverlay, State } from "./blackOverlay";
 import { LogoIcon } from "./icons";
 import { QUICK_ACCESS_MENU, START, WARNING } from "./ButtonIcons";
 import { Input } from "./input";
@@ -75,7 +75,7 @@ const Content: VFC<{ serverAPI: ServerAPI, state: State }> = ({ state }) => {
 
 export default definePlugin((serverApi: ServerAPI) => {
   const state = new State();
-  serverApi.routerHook.addGlobalComponent("BlackOverlay", () => (<BlackOverlay state={state} />));
+  serverApi.routerHook.addGlobalComponent("WatermarkOverlay", () => (<WatermarkOverlay state={state} />));
 
   return {
     title: <div className={staticClasses.Title}>MagicBlack</div>,
@@ -83,7 +83,7 @@ export default definePlugin((serverApi: ServerAPI) => {
     icon: <LogoIcon />,
     onDismount() {
       serverApi.routerHook.removeRoute("/decky-plugin-test");
-      serverApi.routerHook.removeGlobalComponent("BlackOverlay");
+      serverApi.routerHook.removeGlobalComponent("WatermarkOverlay");
     },
   };
 });
