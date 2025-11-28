@@ -3,6 +3,10 @@
         "help_message": "按下 <Key1/> + <Key2/>，显示 DeckWiz 水印",
         "toggle_enableoverlay_label": "显示 DeckWiz 水印",
         "toggle_enableoverlay_description": "按下 <Key/> 返回插件",
-        "warning_message": "<Key1/> 请注意，按键和触摸屏将继续工作"
+        "warning_message": "<Key1/> 请注意，按键和触摸屏将继续工作",
+        "watermark_default": "默认（内置）",
+        "watermark_select_label": "水印图片",
+        "watermark_select_description": "从 ~/Documents/wm 选择自定义水印",
+        "watermark_select_menu_label": "选择水印"
     }
 }
